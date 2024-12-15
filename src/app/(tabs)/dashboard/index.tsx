@@ -1,13 +1,15 @@
 import { Stack } from 'expo-router';
-import { View, Text } from 'react-native';
+
+import { Container } from '~/components/Container';
+import { Text } from '~/components/Themed';
 
 export default function DashboardScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Dashboard' }} />
-      <View className="flex-1 bg-white p-6">
+      <Stack.Screen options={{ headerShown: false }} />
+      <Container>
         <Text className="text-2xl font-bold">Dashboard</Text>
-      </View>
+      </Container>
     </>
   );
 }

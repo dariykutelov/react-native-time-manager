@@ -1,13 +1,14 @@
 import { Stack } from 'expo-router';
-import { Text, View } from 'react-native';
 
+import { Container } from '~/components/Container';
+import { Text } from '~/components/Themed';
 export default function ProjectsScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Projects' }} />
-      <View className="flex-1 items-center justify-center">
+      <Stack.Screen options={{ headerShown: false }} />
+      <Container>
         <Text className="text-2xl font-bold">Projects</Text>
-      </View>
+      </Container>
     </>
   );
 }
